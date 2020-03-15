@@ -118,6 +118,28 @@ Public Class Form1
                 Client.Close()
                 RichTextBox1.Text += "Disconnected" + vbNewLine
 
+                x1 = -56
+                y1 = 501
+                pieceP1.Location = New Point(x1, y1)
+                p = 0
+                dice = 0
+
+                x2 = -56 + 32
+                y2 = 501
+                pieceP2.Location = New Point(x2, y2)
+                q = 0
+
+                positionVal.Text = 0
+                positionVal2.Text = 0
+                prevVal.Text = ""
+                prevVal2.Text = ""
+                Client.Close()
+                Button1.Text = "Connect"
+                Button2.Text = "Disconnect"
+
+                wait(500)
+                Panel4.Visible = True
+
 
             End Try
         End If
